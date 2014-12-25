@@ -4,14 +4,21 @@
 	<title>Christmas Surprise</title>
 
 	<meta charset="utf-8">
-	<meta name="viewport" content="width-device-width; initial-scale=1.0; maximum-scale=1.0; user-scaleable=0;"/>
+	
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="js/ThreeCanvas.js"></script>
+<script src="js/snow.js"></script>
+
+	<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.interactive_bg.js"></script>
 </head>
+
 <body onload="init()">
 
-<script src="js/ThreeCanvas.js"></script>
-<script src="js/snow.js"></script>
+
+<div class="container bg" data-ibg-bg="img/snow.jpg">
 
 <script>
 	var SCREEN_WIDTH = window.innerWidth;
@@ -125,6 +132,14 @@
 
 </script>
 
+	<div class="main">
+	</div>
+
+	<script>
+		$(".bg").interactive_bg();
+	</script>
+
+</div><!-- container -->
 </body>
 </html>
 
